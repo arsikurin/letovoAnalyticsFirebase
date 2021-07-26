@@ -95,6 +95,15 @@
     </div>
 </footer>
 <script>
+    let urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("chat_id")) {
+        chat_id = urlParams.get("chat_id");
+        document.getElementById("chat_id").value = chat_id;
+    } else {
+        window.location.replace("422.html");
+    }
+</script>
+<script>
     if (!!document.querySelector && ("classList" in document.documentElement)) {
         let wrapper = document.querySelector("header .wrapper");
         let nav = document.querySelector("nav");
@@ -102,15 +111,6 @@
             if (wrapper) wrapper.classList.add("wrapper--active");
             if (nav) nav.classList.add("nav--active");
         }, 300);
-    }
-</script>
-<script>
-    let urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("chat_id")) {
-        chat_id = urlParams.get("chat_id");
-        document.getElementById("chat_id").value = chat_id;
-    } else {
-        window.location.replace("422.html");
     }
 </script>
 <script src="static/js/all-5bba9e50.js"></script>
