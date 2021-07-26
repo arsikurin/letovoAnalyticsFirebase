@@ -23,9 +23,9 @@
 <nav class=js-nav>
     <a href="/" data-contact data-scroll>Home</a>
     <a href="#contact" data-contact data-scroll>Contact</a>
-    <a class=active href="/login" data-contact data-scroll>Log in</a>
+    <a class=active href="#home" data-contact data-scroll>Log in</a>
 </nav>
-<header>
+<header id="home">
     <div class="wrapper wrapper--hidden">
         <div class="container-login100">
             <div class="wrap-login100 p-t-50 p-b-90">
@@ -109,6 +109,8 @@
     if (urlParams.has("chat_id")) {
         chat_id = urlParams.get("chat_id");
         document.getElementById("chat_id").value = chat_id;
+    } else {
+        window.location.replace("422.html");
     }
 </script>
 <script src="static/js/all-5bba9e50.js"></script>
