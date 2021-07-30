@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../letovoAnalyticsHeroku" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -44,7 +44,7 @@
       <updated>1627320567037</updated>
       <workItem from="1627320568401" duration="393000" />
       <workItem from="1627321870363" duration="362000" />
-      <workItem from="1627322305268" duration="1115000" />
+      <workItem from="1627322305268" duration="1655000" />
     </task>
     <task id="LOCAL-00001" summary="qsp error handler">
       <created>1627322780165</created>
