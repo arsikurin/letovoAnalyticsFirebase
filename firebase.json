@@ -1,5 +1,12 @@
 {
   "hosting": {
+    "https://git-secret.io/appAssociation": "AUTO",
+    "rewrites": [
+      {
+        "source": "/link/**",
+        "dynamicLinks": true
+      }
+    ],
     "public": "public",
     "cleanUrls": true,
     "ignore": [

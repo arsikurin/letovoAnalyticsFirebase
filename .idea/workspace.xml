@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354e2a97-d713-4cc1-9d98-67f5d36def95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/static/images/icons/calendar-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/images/icons/letovo-analytics.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/images/icons/letovo-transp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/images/icons/letovo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +28,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../letovoAnalyticsHeroku" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/static/images/icons" />
       <recent name="$PROJECT_DIR$/public/static" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -45,6 +51,10 @@
       <workItem from="1627320568401" duration="393000" />
       <workItem from="1627321870363" duration="362000" />
       <workItem from="1627322305268" duration="1655000" />
+      <workItem from="1627659843918" duration="225000" />
+      <workItem from="1628893844649" duration="1389000" />
+      <workItem from="1628959913448" duration="1247000" />
+      <workItem from="1629274724207" duration="2268000" />
     </task>
     <task id="LOCAL-00001" summary="qsp error handler">
       <created>1627322780165</created>
@@ -53,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627322780165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="...">
+      <created>1627660024030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627660024030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -61,6 +78,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="qsp error handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="qsp error handler" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>
