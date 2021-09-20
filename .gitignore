@@ -3,7 +3,7 @@
 /public/static/css/index_old.css
 /public/static/css/main.css
 /public/static/css/util.css
-
+firestore.rules
 # TMP
 /functions
 
