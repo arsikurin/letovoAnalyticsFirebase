@@ -20,6 +20,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="initial commit" />
+        <option name="rewordedMessage" value="initial commit." />
+      </RewordedCommitMessageMapping>
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="qsp error handler" />
+        <option name="rewordedMessage" value="qsp error handler&#10;&#10;&#10;qsp error handler" />
+      </RewordedCommitMessageMapping>
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="enhanced 422" />
+        <option name="rewordedMessage" value="enhanced 422&#10;&#10;&#10;..." />
+      </RewordedCommitMessageMapping>
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="delete useless files" />
+        <option name="rewordedMessage" value="delete useless files&#10;&#10;&#10;delete useless files" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="3" />
+    <option name="onto" value="96efe2a8a7eac8ed91e0dbd8a6667ed9c8dff9b6" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
