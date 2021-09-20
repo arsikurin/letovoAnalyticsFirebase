@@ -10,9 +10,15 @@
     "public": "public",
     "cleanUrls": true,
     "ignore": [
+      "/public/static/js/process.js",
+      "/old",
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
   }
 }

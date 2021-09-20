@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../public/static/images/icons/login.svg"/>
+
+    <link rel="stylesheet" href="../public/static/css/index_old.css">
+    <link rel="stylesheet" type="text/css" href="../public/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/static/css/util.css">
+    <link rel="stylesheet" type="text/css" href="../public/static/css/main.css">
+
+</head>
+<body>
+<nav class=js-nav>
+    <a href="/" data-contact data-scroll>Home</a>
+    <a href="#contact" data-contact data-scroll>Contact</a>
+    <a class=active href="#home" data-contact data-scroll>Log in</a>
+</nav>
+<header id="home">
+    <div class="wrapper wrapper--hidden">
+        <div class="container-login100">
+            <div class="wrap-login100 p-t-50 p-b-90">
+                <form class="login100-form validate-form flex-sb flex-w"
+                      action="https://letovo-analytics.herokuapp.com/api/login" method="post">
+					<span class="login100-form-title p-b-51">
+						Login
+					</span>
+
+
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Login is required">
+                        <label for="login"></label><input class="input100" type="text" id="login" name="login"
+                                                          placeholder="Login">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+                        <label for="password"></label><input class="input100" type="password" id="password"
+                                                             name="password" placeholder="Password">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Chat ID is required">
+                        <label for="chat_id"></label><input class="input100" value="" type="hidden" id="chat_id"
+                                                            name="chat_id" placeholder="Chat ID">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="container-login100-form-btn m-t-17">
+                        <button class="login100-form-btn">
+                            Login
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="dropDownSelect1"></div>
+</header>
+<footer id="contact">
+    <div class=wrapper>
+        <div class=footer__contact>
+            <h4>
+                <a href="mailto:2024kurin.av@student.letovo.ru">
+                    2024kurin.av@student.letovo.ru
+                </a>
+            </h4>
+        </div>
+    </div>
+    <div class=footer__row>
+        <div class=wrapper>
+            <div class=footer__lower>
+                <div class=footer__social>
+                    <a href="https://t.me/arsikurin" rel=external>Telegram</a>
+                    <a href="https://github.com/arsikurin" rel=external>GitHub</a>
+                </div>
+                <div class=footer__copyright>
+                    <a href="/">
+                        Made with ❤️ by arsikurin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    let urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("chat_id")) {
+        chat_id = urlParams.get("chat_id");
+        document.getElementById("chat_id").value = chat_id;
+    } else {
+        window.location.replace("422.html");
+    }
+</script>
+<script>
+    if (!!document.querySelector && ("classList" in document.documentElement)) {
+        let wrapper = document.querySelector("header .wrapper");
+        let nav = document.querySelector("nav");
+        setTimeout(function () {
+            if (wrapper) wrapper.classList.add("wrapper--active");
+            if (nav) nav.classList.add("nav--active");
+        }, 300);
+    }
+</script>
+<script src="../public/static/js/all-5bba9e50.js"></script>
+</body>
+</html>

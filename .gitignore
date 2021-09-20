@@ -1,3 +1,9 @@
+# Custom
+/old
+
+# TMP
+./functions
+
 # Logs
 logs
 *.log

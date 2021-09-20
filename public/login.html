@@ -5,94 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="static/images/icons/login.svg"/>
-
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-    <link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" type="text/css" href="static/vendor/animsition/css/animsition.min.css">
-    <link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="static/vendor/daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" type="text/css" href="static/css/util.css">
-    <link rel="stylesheet" type="text/css" href="static/css/main.css">
-
+    <link rel="stylesheet" href="static/css/login.css"/>
+    <script>
+        function test(form) {
+            alert(`Hello, ${form.login.value} ${form.password.value} ${form.chat_id.value}`);
+        }
+    </script>
 </head>
 <body>
 <nav class=js-nav>
-    <a href="/" data-contact data-scroll>Home</a>
-    <a href="#contact" data-contact data-scroll>Contact</a>
-    <a class=active href="#home" data-contact data-scroll>Log in</a>
+    <a href="/">Home</a>
+    <a href="#footer">Contact</a>
+    <a class=active href="#home">Log in</a>
 </nav>
-<header id="home">
-    <div class="wrapper wrapper--hidden">
-        <div class="container-login100">
-            <div class="wrap-login100 p-t-50 p-b-90">
-                <form class="login100-form validate-form flex-sb flex-w"
-                      action="https://letovo-analytics.herokuapp.com/api/login" method="post">
-					<span class="login100-form-title p-b-51">
-						Login
-					</span>
 
+<div id="home" class="l-form">
+    <form class="form" action="https://letovo-analytics.herokuapp.com/api/login" method="post">
+        <h1 class="form__title">Log in</h1>
 
-                    <div class="wrap-input100 validate-input m-b-16" data-validate="Login is required">
-                        <label for="login"></label><input class="input100" type="text" id="login" name="login"
-                                                          placeholder="Login">
-                        <span class="focus-input100"></span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
-                        <label for="password"></label><input class="input100" type="password" id="password"
-                                                             name="password" placeholder="Password">
-                        <span class="focus-input100"></span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input m-b-16" data-validate="Chat ID is required">
-                        <label for="chat_id"></label><input class="input100" value="aaa" type="hidden" id="chat_id"
-                                                            name="chat_id"
-                                                            placeholder="Chat ID">
-                        <span class="focus-input100"></span>
-                    </div>
-
-                    <div class="container-login100-form-btn m-t-17">
-                        <button class="login100-form-btn">
-                            Login
-                        </button>
-                    </div>
-                </form>
-            </div>
+        <div class="form__div" data-validate="Login is required">
+            <input class="form__input" type="text" id="login" name="login" required placeholder=" ">
+            <label class="form__label" for="login">Login</label>
         </div>
-    </div>
 
-    <div id="dropDownSelect1"></div>
-</header>
-<footer id="contact">
-    <div class=wrapper>
-        <div class=footer__contact>
-            <h4>
-                <a href="mailto:2024kurin.av@student.letovo.ru">
-                    2024kurin.av@student.letovo.ru
+
+        <div class="form__div" data-validate="Password is required">
+            <input class="form__input" type="password" id="password" name="password" required placeholder=" ">
+            <label class="form__label" for="password">Password</label>
+        </div>
+
+        <div class="" data-validate="Chat ID is required">
+            <input class="form__input" value="" type="hidden" id="chat_id" required name="chat_id">
+        </div>
+
+        <button type="submit" class="custom-btn btn-3"><span>Proceed</span></button>
+    </form>
+</div>
+
+<footer id="footer" class="footer">
+    <div class="footer__row footer__row--1">
+        <div class="footer__col footer__col--1">
+            <h3 class="heading-3">Explore</h3>
+            <ul class="footer__list">
+                <li onclick="location.href='https://orexy-letovo.tk/';" class="footer__items">Nuts at Letovo</li>
+                <br/>
+                <li onclick="location.href='https://s.letovo.ru/';" class="footer__items">Letovo Student</li>
+                <br/>
+                <li onclick="location.href='https://canvas.letovo.ru/';" class="footer__items">Letovo Canvas</li>
+            </ul>
+        </div>
+        <div class="footer__col footer__col--4">
+            <ul class="footer__mail">
+                <li onclick="window.location='mailto:2024kurin.av@student.letovo.ru';" style="font-size:19px"
+                    class="alert-heading">2024kurin.av@student.letovo.ru
+                </li>
+            </ul>
+            <div class="footer__social">
+                <h2 class="heading">Social media</h2>
+                <a href="https://t.me/arsikurin">
+                    <img src="./static/images/icons/telegram-logo.png"
+                         alt="logo-telegram" width="48" class="footer__icon"/>
                 </a>
-            </h4>
-        </div>
-    </div>
-    <div class=footer__row>
-        <div class=wrapper>
-            <div class=footer__lower>
-                <div class=footer__social>
-                    <a href="https://t.me/arsikurin" rel=external>Telegram</a>
-                    <a href="https://github.com/arsikurin" rel=external>GitHub</a>
-                </div>
-                <div class=footer__copyright>
-                    <a href="/">
-                        Made with ❤️ by arsikurin
-                    </a>
-                </div>
+                <a href="https://github.com/arsikurin">
+                    <img src="./static/images/icons/github-logo.png"
+                         alt="logo-github" width="48" class="footer__icon"/>
+                </a>
             </div>
         </div>
+    </div>
+    <div class="footer__row footer__row--2">
+        <p class="footer__copyright">
+            &copy; Made with ❤️ by arsikurin
+        </p>
     </div>
 </footer>
+
 <script>
     let urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("chat_id")) {
@@ -112,15 +99,5 @@
         }, 300);
     }
 </script>
-<script src="static/js/all-5bba9e50.js"></script>
-<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
-<script src="static/vendor/animsition/js/animsition.min.js"></script>
-<script src="static/vendor/bootstrap/js/popper.js.map"></script>
-<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="static/vendor/select2/select2.min.js"></script>
-<script src="static/vendor/daterangepicker/moment.min.js"></script>
-<script src="static/vendor/daterangepicker/daterangepicker.js"></script>
-<script src="static/vendor/countdowntime/countdowntime.js"></script>
-<script src="static/js/main.js"></script>
 </body>
 </html>
