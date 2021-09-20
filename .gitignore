@@ -1,8 +1,11 @@
 # Custom
 /old
+/public/static/css/index_old.css
+/public/static/css/main.css
+/public/static/css/util.css
 
 # TMP
-./functions
+/functions
 
 # Logs
 logs
