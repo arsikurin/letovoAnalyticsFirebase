@@ -3,9 +3,9 @@
 <head>
     <title>Login</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="static/images/icons/login.svg"/>
-    <link rel="stylesheet" href="static/css/login.css"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="static/images/icons/login.svg" rel="icon" type="image/png"/>
+    <link href="static/css/login.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -15,56 +15,61 @@
     <a class=active href="#home">Log in</a>
 </nav>
 
-<div id="home" class="l-form">
-    <form class="form" action="https://letovo-analytics.herokuapp.com/api/login" method="post">
+<div class="l-form" id="home">
+    <form class="form">
         <h1 class="form__title">Log in</h1>
 
         <div class="form__div" data-validate="Login is required">
-            <input class="form__input" type="text" id="login" name="login" required placeholder=" ">
+            <input class="form__input" id="login" name="login" placeholder=" " required type="text">
             <label class="form__label" for="login">Login</label>
         </div>
 
 
         <div class="form__div" data-validate="Password is required">
-            <input class="form__input" type="password" id="password" name="password" required placeholder=" ">
+            <input class="form__input" id="password" name="password" placeholder=" " required type="password">
             <label class="form__label" for="password">Password</label>
         </div>
 
-        <div class="" data-validate="Chat ID is required">
-            <input class="form__input" value="" type="hidden" id="chat_id" required name="chat_id">
+        <div class="" data-validate="Sender ID is required">
+            <input class="form__input" id="sender_id" name="sender_id" required type="hidden" value="">
         </div>
 
-        <button type="submit" class="custom-btn btn-3"><span>Proceed</span></button>
+        <button class="custom-btn btn-3"
+                formaction="https://letovo-analytics-api.herokuapp.com/login" formmethod="post" type="submit">
+            <span>Proceed</span>
+        </button>
     </form>
 </div>
 
-<footer id="footer" class="footer">
+<footer class="footer" id="footer">
     <div class="footer__row footer__row--1">
         <div class="footer__col footer__col--1">
             <h3 class="heading-3">Explore</h3>
             <ul class="footer__list">
-                <li onclick="location.href='http://orexy-letovo.tk/';" class="footer__items">Nuts at Letovo</li>
+                <li class="footer__items" onclick="location.href='https://milk-cool.github.io/letovo-nuts/';">Nuts at
+                    Letovo
+                </li>
                 <br/>
-                <li onclick="location.href='https://s.letovo.ru/';" class="footer__items">Letovo Student</li>
+                <li class="footer__items" onclick="location.href='https://s.letovo.ru/';">Letovo Student</li>
                 <br/>
-                <li onclick="location.href='https://canvas.letovo.ru/';" class="footer__items">Letovo Canvas</li>
+                <li class="footer__items" onclick="location.href='https://canvas.letovo.ru/';">Letovo Canvas</li>
             </ul>
         </div>
         <div class="footer__col footer__col--4">
             <ul class="footer__mail">
-                <li onclick="window.location='mailto:2024kurin.av@student.letovo.ru';" style="font-size:19px"
-                    class="alert-heading">2024kurin.av@student.letovo.ru
+                <li class="alert-heading" onclick="window.location='mailto:2024kurin.av@student.letovo.ru';"
+                    style="font-size:19px">2024kurin.av@student.letovo.ru
                 </li>
             </ul>
             <div class="footer__social">
                 <h2 class="heading">Social media</h2>
                 <a href="https://t.me/arsikurin">
-                    <img src="./static/images/icons/telegram-logo.png"
-                         alt="logo-telegram" width="48" class="footer__icon"/>
+                    <img alt="logo-telegram"
+                         class="footer__icon" src="./static/images/icons/telegram-logo.png" width="48"/>
                 </a>
                 <a href="https://github.com/arsikurin">
-                    <img src="./static/images/icons/github-logo.png"
-                         alt="logo-github" width="48" class="footer__icon"/>
+                    <img alt="logo-github"
+                         class="footer__icon" src="./static/images/icons/github-logo.png" width="48"/>
                 </a>
             </div>
         </div>
@@ -78,9 +83,9 @@
 
 <script>
     let urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("chat_id")) {
-        chat_id = urlParams.get("chat_id");
-        document.getElementById("chat_id").value = chat_id;
+    if (urlParams.has("sender_id")) {
+        sender_id = urlParams.get("sender_id");
+        document.getElementById("sender_id").value = sender_id;
     } else {
         window.location.replace("422.html");
     }
@@ -94,6 +99,27 @@
             if (nav) nav.classList.add("nav--active");
         }, 300);
     }
+</script>
+<script>
+    async function postData(url, data = {}) {
+        const response = await fetch(url, {
+            method: "POST",
+            mode: "no-cors",
+            cache: "no-cache",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            redirect: "follow",
+            referrerPolicy: "no-referrer",
+            body: JSON.stringify(data)
+        });
+        return response.json();
+    }
+
+    postData("https://letovo-analytics-api.herokuapp.com/login")
+        .then(data => {
+            console.log(data);
+        });
 </script>
 </body>
 </html>

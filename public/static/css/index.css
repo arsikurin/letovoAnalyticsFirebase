@@ -10,6 +10,13 @@
     --copyright-font: "Source Sans", sans-serif;
     --normal-font-size: 1rem;
     --small-font-size: .75rem;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 html {
@@ -88,6 +95,7 @@ h4 {
     text-align: center;
     font-size: 6vw;
 }
+
 /*add media!!! base on device height*/
 .desc3 {
     background-color: #0f0f10;
@@ -529,7 +537,7 @@ p.lead, .punctuation.lead {
 
 
 .waveS {
-    background-color: #fff; /*rferfref*/
+    background-color: #fff;
     display: block;
     padding-top: 75px;
 }
