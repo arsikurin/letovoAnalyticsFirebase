@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Source+Sans+Pro&family=Roboto:wght@400;500family=JetBrains+Mono&&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Source+Sans+Pro&family=Roboto:wght@400;500&family=JetBrains+Mono:wght@600&&display=swap');
 
 :root {
     --first-color: #1A73E8;
     --input-color: #80868B;
     --border-color: #DADCE0;
 
+    --code-font: "JetBrains Mono", monospace;
     --body-font: "Roboto", sans-serif;
     --footer-font: "Inter", sans-serif;
-    --copyright-font: "Source Sans", sans-serif;
+    --copyright-font: "Roboto", sans-serif;
     --normal-font-size: 1rem;
     --small-font-size: .75rem;
 
@@ -48,7 +49,7 @@ body {
 h1 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: "JetBrains Mono", monospace;
+    font-family: var(--code-font);
     font-size: 4rem;
     margin: 0.5em 0 0.3em;
     color: #1b1e21;
@@ -193,7 +194,7 @@ li::before {
 }
 
 .footer__mail {
-    font-family: var(--copyright-font);
+    font-family: var(--body-font);
     list-style: none;
     display: inline-block;
 }

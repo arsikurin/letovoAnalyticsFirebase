@@ -20,18 +20,18 @@
         <h1 class="form__title">Log in</h1>
 
         <div class="form__div" data-validate="Login is required">
-            <input class="form__input" id="login" name="login" placeholder=" " required type="text">
+            <input inputmode="email" class="form__input" id="login" name="login" placeholder=" " required type="text">
             <label class="form__label" for="login">Login</label>
         </div>
 
 
         <div class="form__div" data-validate="Password is required">
-            <input class="form__input" id="password" name="password" placeholder=" " required type="password">
+            <input inputmode="text" class="form__input" id="password" name="password" placeholder=" " required type="password">
             <label class="form__label" for="password">Password</label>
         </div>
 
         <div class="" data-validate="Sender ID is required">
-            <input class="form__input" id="sender_id" name="sender_id" required type="hidden" value="">
+            <input inputmode="none" class="form__input" id="sender_id" name="sender_id" required type="hidden" value="">
         </div>
 
         <button class="custom-btn btn-3"
@@ -99,27 +99,6 @@
             if (nav) nav.classList.add("nav--active");
         }, 300);
     }
-</script>
-<script>
-    async function postData(url, data = {}) {
-        const response = await fetch(url, {
-            method: "POST",
-            mode: "no-cors",
-            cache: "no-cache",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            redirect: "follow",
-            referrerPolicy: "no-referrer",
-            body: JSON.stringify(data)
-        });
-        return response.json();
-    }
-
-    postData("https://letovo-analytics-api.herokuapp.com/login")
-        .then(data => {
-            console.log(data);
-        });
 </script>
 </body>
 </html>
