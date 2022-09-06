@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="354e2a97-d713-4cc1-9d98-67f5d36def95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/letovoAnalyticsFirebase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/letovoAnalyticsFirebase.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="354e2a97-d713-4cc1-9d98-67f5d36def95" name="Default Changelist" comment="add webview for telegram">
+      <change afterPath="$PROJECT_DIR$/public/static/js/webview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webview.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/webview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +86,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/arsikurin/PycharmProjects/letovoAnalyticsFirebase/public"
   }
@@ -142,7 +142,7 @@
       <workItem from="1646324656532" duration="5927000" />
       <workItem from="1648132314340" duration="29000" />
       <workItem from="1649052516977" duration="42000" />
-      <workItem from="1662494837844" duration="2479000" />
+      <workItem from="1662494837844" duration="2785000" />
     </task>
     <task id="LOCAL-00001" summary="qsp error handler">
       <created>1627322780165</created>
@@ -179,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646330388599</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add webview for telegram">
+      <created>1662497413077</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662497413077</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +209,7 @@
     <MESSAGE value="..." />
     <MESSAGE value="Minor Release&#10;&#10;bugfixes" />
     <MESSAGE value="Minor Release&#10;&#10;fix google fonts api&#10;add custom keyboards&#10;+minor bugfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor Release&#10;&#10;fix google fonts api&#10;add custom keyboards&#10;+minor bugfixes" />
+    <MESSAGE value="add webview for telegram" />
+    <option name="LAST_COMMIT_MESSAGE" value="add webview for telegram" />
   </component>
 </project>
