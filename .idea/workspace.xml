@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354e2a97-d713-4cc1-9d98-67f5d36def95" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/letovoAnalyticsFirebase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/letovoAnalyticsFirebase.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,16 +65,16 @@
     </file-type-list>
   </component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="4" />
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/public/static/css/login.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/public/static/css/index.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/firebase.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.firebaserc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/public/login.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/firebase.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/public/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/login.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/static/css/index.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/static/css/login.css" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,30 +85,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/functions/node_modules/firebase-admin/lib/firebase-namespace-api.d.ts&#10;/home/arsikurin/PycharmProjects/letovoAnalyticsFirebase/firebase-debug.log" />
-    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="CSS&#10;HTML" />
-    <property name="javascript.nodejs.core.library.configured.version" value="16.9.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="16.9.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/arsikurin/PycharmProjects/letovoAnalyticsFirebase/public"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/static/images/icons" />
       <recent name="$PROJECT_DIR$/public/static" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/old" />
       <recent name="$PROJECT_DIR$/public/static/css" />
+      <recent name="$PROJECT_DIR$/old" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -151,7 +139,10 @@
       <workItem from="1638040053164" duration="1811000" />
       <workItem from="1638113056328" duration="13000" />
       <workItem from="1642102450634" duration="418000" />
-      <workItem from="1646324656532" duration="5078000" />
+      <workItem from="1646324656532" duration="5927000" />
+      <workItem from="1648132314340" duration="29000" />
+      <workItem from="1649052516977" duration="42000" />
+      <workItem from="1662494837844" duration="2479000" />
     </task>
     <task id="LOCAL-00001" summary="qsp error handler">
       <created>1627322780165</created>
@@ -181,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642109321695</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Minor Release&#10;&#10;fix google fonts api&#10;add custom keyboards&#10;+minor bugfixes">
+      <created>1646330388599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646330388599</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +201,7 @@
     <MESSAGE value="add dynamic links and several photos" />
     <MESSAGE value="..." />
     <MESSAGE value="Minor Release&#10;&#10;bugfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor Release&#10;&#10;bugfixes" />
+    <MESSAGE value="Minor Release&#10;&#10;fix google fonts api&#10;add custom keyboards&#10;+minor bugfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor Release&#10;&#10;fix google fonts api&#10;add custom keyboards&#10;+minor bugfixes" />
   </component>
 </project>
